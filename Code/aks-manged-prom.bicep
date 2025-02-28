@@ -84,6 +84,25 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2024-07-02-previ
   }
 }
 
+resource aksagentpool 'Microsoft.ContainerService/managedClusters/agentPools@2024-10-01' = {
+  name: 'agentpool2'
+  parent: aksCluster
+  properties: {
+    count: 1
+    vmSize: 'Standard_DS3_v2'
+    osType: 'Linux'
+    mode: 'User'
+    availabilityZones: [
+      '1'
+      '2'
+      '3'
+    ]
+    enableAutoScaling: true
+    minCount: 1
+    maxCount: 10
+  }
+}
+
 resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
   name: '${name}-log-analytics'
   location: location

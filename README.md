@@ -6,13 +6,13 @@ This guide provides an overview of how to monitor Azure Kubernetes Service (AKS)
 
 ## Prerequisites
 
-- An active Azure subscription
-- An AKS cluster
+- Active Azure subscription
+- AKS cluster
 - Azure CLI installed
 - Azure Monitor workspace
 - Azure Managed Grafana instance
 
-To deploy Azure AKS Monitoring using the Bicep files in the folder, follow these steps:
+To deploy Azure AKS Monitoring using the Bicep files in the folder, follow the following steps:
 
 ## Deployment Steps
 

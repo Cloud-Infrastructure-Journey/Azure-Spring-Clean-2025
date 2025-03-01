@@ -4,7 +4,7 @@ az group create --name aks-mon-rg --location northeurope
 
 # Deploy the Bicep file
 
-az group deployment create --resource-group aks-mon-rg --template-file aks-monitoring.bicep --parameters location=northeurope name=aks-mon-cluster-03 
+az group deployment create --resource-group aks-mon-rg --template-file aks-manged-prom.bicep --parameters location=northeurope name=aks-mon-cluster-01 
 
 # Clean up resources
 

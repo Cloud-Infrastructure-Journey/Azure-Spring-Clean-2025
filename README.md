@@ -23,7 +23,7 @@ To deploy Azure AKS Monitoring using the Bicep files in the folder, follow these
 
 2. **Deploy the Bicep File**:
    ```sh
-   az group deployment create --resource-group aks-mon-rg --template-file aks-monitoring.bicep --parameters location=northeurope name=aks-mon-cluster
+   az group deployment create --resource-group aks-mon-rg --template-file aks-manged-prom.bicep --parameters location=northeurope name=aks-mon-cluster
    ```
 
 3. **Clean Up Resources** (optional):

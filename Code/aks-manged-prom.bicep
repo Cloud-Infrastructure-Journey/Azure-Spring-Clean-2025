@@ -1,3 +1,6 @@
+// This Bicep code sets up a comprehensive monitoring and alerting solution for an AKS cluster using Prometheus and Grafana, 
+// ensuring that the cluster's performance and health are continuously monitored and any issues are promptly alerted.
+
 @description('Location of the Azure resources. This value is used to determine the location of the resources that are created.')
 param location string = 'northeurope'
 

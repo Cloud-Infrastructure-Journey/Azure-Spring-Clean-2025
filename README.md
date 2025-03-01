@@ -4,6 +4,8 @@
 
 This guide provides an overview of how to monitor Azure Kubernetes Service (AKS) using Azure Monitor, integrate with Azure Managed Grafana, and set up Azure Alerts with Azure Monitor recording and alert rules.
 
+<img src="images/azure-spring-clean-2025-AKS-diagram.png" width="600" alt="AKS Monitoring" />
+
 ## Prerequisites
 
 - Active Azure subscription

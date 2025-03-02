@@ -16,7 +16,7 @@ param kubernetesRecordingRuleGroupName string = 'KubernetesRecordingRulesRuleGro
 @description('Specifies the name of the Prometheus recording rule group for UX recording rules.')
 param UXPromRecordingRules string = 'UXRecordingRulesRuleGroup'
 
-@description('Specifies the object id of an Azure Active Directory user. In general, this the object id of the system administrator who deploys the Azure resources.')
+@description('Specifies the object id of an Microsoft Entra ID Directory user. In general, this the object id of the system administrator who deploys the Azure resources.')
 param userId string = '<USER_OBJECT_ID>' // Replace with the object id of the user
 
 @description('AKS Cluster')

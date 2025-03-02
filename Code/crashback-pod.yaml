@@ -1,9 +1,18 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: crashback-pod
-spec:
-  containers:
-  - name: crashback-container
-    image: busybox
-    command: ["sh", "-c", "echo 'CrashLoopBackOff'; exit 1"]
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: crashback-deployment
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: crashback
+      template:
+        metadata:
+          labels:
+            app: crashback
+        spec:
+          containers:
+          - name: crashback-container
+            image: busybox
+            command: ["sh", "-c", "echo 'CrashLoopBackOff'; exit 1"]
